@@ -1,0 +1,123 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #1c1c1c;
+  background: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.hero {
+  background: linear-gradient(120deg, #1d3557, #457b9d);
+  color: white;
+  padding-bottom: 4rem;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: 2rem auto 0;
+  padding: 1rem;
+}
+
+.hero-content h1 {
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  background: #f1faee;
+  color: #1d3557;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.section-alt {
+  background: #eef4f8;
+  max-width: 100%;
+  padding-left: max(1rem, calc((100% - 1100px) / 2));
+  padding-right: max(1rem, calc((100% - 1100px) / 2));
+}
+
+.services-grid,
+.gallery-grid {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.services-grid li,
+.gallery-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.placeholder {
+  background: #d6e4ee;
+  border-radius: 0.5rem;
+  height: 140px;
+  display: grid;
+  place-items: center;
+  color: #365a73;
+  font-weight: 700;
+}
+
+.contact-box {
+  background: white;
+  border-left: 5px solid #457b9d;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.footer {
+  background: #1d3557;
+  color: white;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
