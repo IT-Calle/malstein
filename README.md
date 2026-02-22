@@ -21,3 +21,9 @@ npm run dev
 npm run build
 npm run preview
 ```
+
+## Projektstruktur (modular)
+
+- `src/App.jsx`: setzt die Seite aus einzelnen Sektionen zusammen
+- `src/components/`: enthält die UI-Sektionen (`Header`, `HeroSection`, `ServicesSection`, `GallerySection`, `AboutSection`, `ContactSection`, `ImprintFooter`)
+- `src/data/content.js`: enthält statische Inhalte wie Services und Galerieeinträge
