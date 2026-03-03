@@ -58,6 +58,7 @@ export default function ServicesSection({ services }) {
                   p-10 group relative overflow-hidden bg-malstein-bgSecondary rounded-[2rem] hover:shadow-soft transition-all duration-500 flex flex-col justify-between
                   ${isLarge ? 'md:col-span-2 md:row-span-2 bg-malstein-text text-white' : ''}
                   ${isTall && !isLarge ? 'md:row-span-2' : ''}
+                  ${index === 3 ? 'md:col-span-2' : ''}
                   ${!isLarge ? 'bg-white border border-malstein-text/5 hover:border-malstein-accent/20' : ''}
                 `}
               >

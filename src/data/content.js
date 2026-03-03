@@ -20,6 +20,11 @@ export const services = [
     description:
       'Fenster, Türen, Treppen und Geländer mit widerstandsfähigen und modernen Lackaufbauten.',
   },
+  {
+    title: 'Schimmelgutachten & Entfernung',
+    description:
+      'Fachgerechte Ursachenanalyse, nachhaltige Schimmelbeseitigung und präventive Maßnahmen für ein gesundes Raumklima.',
+  },
 ]
 
 export const galleryItems = [
