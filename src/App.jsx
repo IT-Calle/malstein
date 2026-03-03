@@ -1,23 +1,24 @@
-import AboutSection from './components/AboutSection'
-import ContactSection from './components/ContactSection'
-import GallerySection from './components/GallerySection'
-import Header from './components/Header'
-import HeroSection from './components/HeroSection'
-import ImprintFooter from './components/ImprintFooter'
-import ServicesSection from './components/ServicesSection'
-import { galleryItems, services } from './data/content'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import RootLayout from './layouts/RootLayout'
+import Home from './pages/Home'
+import Services from './pages/Services'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Gallery from './pages/Gallery'
 
 function App() {
   return (
-    <div className="page">
-      <Header />
-      <HeroSection />
-      <ServicesSection services={services} />
-      <GallerySection galleryItems={galleryItems} />
-      <AboutSection />
-      <ContactSection />
-      <ImprintFooter />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<RootLayout />}>
+          <Route index element={<Home />} />
+          <Route path="leistungen" element={<Services />} />
+          <Route path="galerie" element={<Gallery />} />
+          <Route path="ueber-uns" element={<About />} />
+          <Route path="kontakt" element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
