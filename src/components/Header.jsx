@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Paintbrush } from 'lucide-react';
+import malsteinLogo from '../data/logo.png';
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ function Header() {
     <>
       <header className="fixed top-6 left-1/2 -translate-x-1/2 w-[calc(100%-3rem)] md:w-auto md:min-w-[700px] glass-pill rounded-full py-4 px-6 md:px-8 flex justify-between items-center z-50">
         <Link to="/" className="group flex items-center gap-2 text-xl md:text-2xl font-bold font-heading text-malstein-text hover:text-malstein-accent transition-colors tracking-tight">
-          <img src="/src/data/logo.png" alt="Malstein Logo" className="h-[5rem] w-auto drop-shadow-sm group-hover:-rotate-6 transition-transform duration-300" />
+          <img src={malsteinLogo} alt="Malstein Logo" className="h-[5rem] w-auto drop-shadow-sm group-hover:-rotate-6 transition-transform duration-300" />
         </Link>
 
         {/* Desktop Navigation */}
