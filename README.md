@@ -1,4 +1,4 @@
-# Malerbetrieb Malstein – React Projekt
+# Malerbetrieb Malstein – Ultra Premium React Projekt
 
 Dieses Repository enthält ein React.js-Projekt (Vite) für einen modernen Malerbetrieb mit folgenden Bereichen:
 
