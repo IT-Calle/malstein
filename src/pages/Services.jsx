@@ -79,6 +79,21 @@ export default function Services() {
                     </motion.div>
                 </motion.div>
 
+                <motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }} className="flex flex-col lg:flex-row-reverse gap-16 items-center">
+                    <motion.div variants={itemAnim} className="w-full lg:w-1/2 aspect-[4/3] rounded-[3rem] overflow-hidden relative shadow-2xl">
+                        <img src={galleryItems[3].image} alt="Schimmelgutachten & Entfernung" className="w-full h-full object-cover scale-105" />
+                    </motion.div>
+                    <motion.div variants={itemAnim} className="w-full lg:w-1/2 max-w-xl">
+                        <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-malstein-text">04. {services[3].title}</h2>
+                        <p className="text-xl text-malstein-text/70 mb-8 font-light leading-relaxed">{services[3].description} Wir begutachten den Befall professionell, entfernen ihn rückstandslos und sorgen mit speziellen Anstrichen dafür, dass er nicht wiederkehrt.</p>
+                        <ul className="space-y-4 text-malstein-text/80 mb-10 font-medium">
+                            <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-malstein-accent" /> Ursachenanalyse & Gutachten</li>
+                            <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-malstein-accent" /> Fachgerechte Schimmelentfernung</li>
+                            <li className="flex items-center gap-3"><div className="w-2 h-2 rounded-full bg-malstein-accent" /> Präventive Spezialanstriche</li>
+                        </ul>
+                    </motion.div>
+                </motion.div>
+
                 {/* CTA */}
                 <div className="pt-20 border-t border-malstein-text/10 flex flex-col items-center text-center">
                     <h3 className="text-4xl font-bold mb-8 text-malstein-text">Bereit für Ihr Projekt?</h3>
